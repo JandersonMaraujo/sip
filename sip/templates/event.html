@@ -1,0 +1,29 @@
+{% load static %}
+{% include 'partials/_header.html' %}
+
+<body>
+    {% include 'partials/_navbar.html' %}
+    <div class="container">
+        <form class="form-content form-content-grid" action="{% url 'event' %}", method="post">
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-group">
+                    <label for="{{ form.id_for_label }}">
+                        {{ field.label }}
+                    </label>
+                    {{ field }}
+
+                    {% if field.help_text %}
+                        <p class="help-text">{{ field.help_text }}</p>
+                    {% endif %}
+
+                    {{ field.errors }}
+                </div>
+            {% endfor %}
+            <div class="form-group">
+                <input class="btn-salvar" type="submit" value="Salvar">
+            </div>
+        </form>
+    </div>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+</body>

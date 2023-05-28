@@ -1,0 +1,421 @@
+:root {
+    --color-primary: #269fe6;
+    --color-primary-hover: #2086c2;
+    --color-primary-dark: #13141f;
+    --color-primary-dark-hover: #212336;
+    --color-primary-light: #d4ecfa;
+    --color-primary-light-hover: #bdd8e7;
+  
+    --color-white: #fff;
+    --color-black: #000;
+  
+    --color-dark-text: #444;
+    --color-info-light: #cce5ff;
+    --color-debug-light: #cce5ff;
+    --color-success-light: #d4edda;
+    --color-alert-light: #fff3cd;
+    --color-warning-light: #fff3cd;
+    --color-error-light: #f8d7da;
+  
+    --color-info-dark: #4d86c4;
+    --color-debug-dark: #4d86c4;
+    --color-success-dark: #4a9c5d;
+    --color-alert-dark: #927f40;
+    --color-warning-dark: #927f40;
+    --color-error-dark: #da525d;
+  
+    --color-gray-0: #f9f9f9;
+    --color-gray-1: #e0e0e0;
+    --color-gray-2: #c7c7c7;
+    --color-gray-3: #aeaeae;
+    --color-gray-4: #959595;
+    --color-gray-5: #7d7d7d;
+    --color-gray-6: #646464;
+    --color-gray-7: #4b4b4b;
+    --color-gray-8: #323232;
+    --color-gray-9: #191919;
+  
+    --font-primary: sans-serif;
+    --font-headings: 'Roboto Slab', serif;
+  
+    --spacing-gutter-verysmall: 0.5rem;
+    --spacing-gutter-small: 1rem;
+    --spacing-gutter-medium: 3rem;
+    --spacing-gutter-large: 4rem;
+  }
+
+
+
+body {
+    font-family: Futura, 'Trebuchet MS';
+}
+
+header{
+    background: darkcyan;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto ;
+}
+
+/*nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 10px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+nav a:hover{
+    font-size: 20px;
+    color: gold;
+    text-decoration: underline;
+}
+*/
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: darkcyan;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: gold;
+}
+
+.produtos li:hover h2{
+    font-size: 35px;
+}
+
+.produtos li:active{
+    border-color: darkgoldenrod;
+    border-radius: 30px;
+}
+
+.produto-descricao{
+    font-size: 18px;
+    text-align: center;
+}
+
+.produto-preco{
+    font-size: 25px;
+    font-weight: bold;
+    color: darkcyan;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.produto-preco-antigo{
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: line-through;
+    color: gray;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer{
+    background: url("./images/bg.jpg");
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copy-right{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main{
+
+}
+
+/* Forms */
+.form-content {
+    max-width: 64rem;
+    margin: 0 auto;
+    margin-bottom: var(--spacing-gutter-medium);
+  }
+
+  
+.form-content label,
+.form-content .help-text,
+.errorlist {  /* nativo do django no html */
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    list-style-type: none;
+}
+
+.errorlist {
+    color: var(--color-error-dark);
+}
+    
+.form-content input,
+.form-content select,
+.form-content textarea {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--color-primary-dark);
+}
+
+.form-content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fitm minmax(30rem, 1fr));
+    gap: var(--spacing-gutter-verysmall) var(--spacing-gutter-verysmall)
+}
+
+.form-content .btn-salvar {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+/* form{
+    margin: 40px 0;
+} */
+
+/* form label, form legend{
+    display: block;
+    font-size: 18px;
+    margin: 0 0 10px;
+} */
+
+
+.input-padrao {
+    display: block;
+    margin: 0 0 10px;
+    padding: 10px 20px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+
+.dncolor{
+    color: #01B8AA;
+    font-style: italic;
+}
+
+/* .send{
+    width: 40%;
+    padding: 15px 0;
+    background: darkcyan;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all;
+
+} */
+
+
+.send:hover{
+    background: darkslategray;
+    transform: scale(1.1);
+}
+
+.find{
+    width: 10%;
+    padding: 15px 0;
+    background: darkcyan;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s all;
+
+}
+
+.find:hover{
+    background: darkslategray;
+    transform: scale(1.1);
+}
+
+.card-effect:hover{
+    transition: 0.8s all;
+    transform: scale(1.02);
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: darkslategray;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/* css da pagina inicial */
+.banner{
+    width: 100%;
+}
+
+.titulo_principal{
+    text-align: center;
+    font-size: 2em; /* fonte 2x maior que a fonte padrão do navegador*/
+    margin: 0 0 1em; /* margem proporcional ao tamanho da fonte*/
+    clear: left;
+}
+
+.principal {
+    padding: 3em 0;
+    background: darkcyan;
+    width: auto;
+    margin: 0 auto;
+}
+.principal p{
+    margin: 0 0 1em; /* margem proporcional ao tamanho da fonte*/
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal strong{
+    font-style: italic;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.itens {
+      line-height: 1.5em;
+}
+
+.itens:first-child{ /* Criamos uma marcação para o primeiro item da lista. Fizemos isso porque não é correto mexer no html quadno queremos mexer no estilo */
+    font-weight: bold;
+}
+
+.itens:before{
+    content: "✂ ";
+    font-size: 10px;
+}
+
+.imagem-beneficios{
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 black;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.30; /* 30% */
+}
+
+.utensilios {
+    width: 120px;
+    float: left; /*Imagem vai flutuar. Isso serve para o texto ficar ao redor  dela*/
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0; /* Criando espaçamento proporcional à fonte padrão da página página */
+    background: linear-gradient(#01b8aa, darkcyan);
+    width: auto;
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+.mapa p{
+    margin: 0 0 2em; /* Criando espaçamento proporcional à fonte padrão da página página */
+    text-align: center;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: darkslategray;
+    width: auto;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 900px) {
+    .responsive-font-example {
+      font-size: 14px;
+    }
+  }
+  /* If the screen size is smaller than 1200px, set the font-size to 80px */
+  @media (max-width: 600px) {
+    .responsive-font-example {
+      font-size: 10px;
+    }
+  }
